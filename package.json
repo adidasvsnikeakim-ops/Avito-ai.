@@ -1,0 +1,26 @@
+{
+  "name": "avito-ai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AVITO AI — SaaS для анализа объявлений и перепродажи товаров",
+  "engines": { "node": ">=20 <25" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:init": "node scripts/init-db.mjs",
+    "telegram:set-webhook": "node scripts/set-telegram-webhook.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "openai": "^5.12.0",
+    "pg": "^8.16.3"
+  }
+}
